@@ -2,7 +2,7 @@
 <h1>Learning OGL</h1>
 
 This is a 2D project using an orthogonal projection.
-dependencies:
+<p><h2>dependencies:</h2></p>
 
 <p>https://glad.dav1d.de/</p>
 <p>https://www.glfw.org/download.html</p>
