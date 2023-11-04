@@ -1,5 +1,5 @@
 # OGL_Master
-<h1>Learning OGL</h1>h1>
+<h1>Learning OGL</h1>
 
 This is a 2D project using an orthogonal projection.
 dependencies:
