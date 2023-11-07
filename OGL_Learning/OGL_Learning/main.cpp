@@ -304,5 +304,6 @@ void draw_cells() {
 
     uniformlocation = glGetUniformLocation(programID, "projection");
     glUniformMatrix4fv(uniformlocation, 1, GL_FALSE, &projection[0][0]);
+
     mycells->draw();
 }

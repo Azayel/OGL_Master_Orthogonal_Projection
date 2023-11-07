@@ -9,10 +9,8 @@ class cells {
 	unsigned int texture;
 	unsigned int programID;
 	std::vector<unsigned int> indices;
-	std::vector<glm::vec3> vertices;
-	std::vector<glm::vec2> textures;
-	
-
+	std::vector<float> vertexdataholder;
+	float cTextureID;
 
 
 	void update_indices();
@@ -25,4 +23,5 @@ public:
 	bool update();
 	void draw();
 	unsigned int get_programID();
+	void switchTexture();
 };

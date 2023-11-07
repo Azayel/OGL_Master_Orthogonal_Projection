@@ -1,16 +1,19 @@
-﻿  main.cpp
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(22,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(71,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(72,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(76,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(77,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(78,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(81,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(82,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(140,29): warning C4244: 'argument': conversion from 'const float' to 'GLsizei', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(140,22): warning C4244: 'argument': conversion from 'const float' to 'GLsizei', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(192,38): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(192,31): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
-C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\OGL_Learning\main.cpp(295,40): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
-  OGL_Learning.vcxproj -> C:\Users\Max\Desktop\Tron\OGL_Master\OGL_Learning\x64\Debug\OGL_Learning.exe
+﻿  cells.cpp
+C:\Users\Max\Desktop\New folder\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\cells.cpp(183,15): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Max\Desktop\New folder\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\cells.cpp(204,46): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+glfw3.lib(init.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(init.obj)' or at ''; linking object as if no debug info
+glfw3.lib(window.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(window.obj)' or at ''; linking object as if no debug info
+glfw3.lib(input.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(input.obj)' or at ''; linking object as if no debug info
+glfw3.lib(context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(context.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_init.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_init.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_monitor.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_monitor.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_time.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_time.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_thread.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_thread.obj)' or at ''; linking object as if no debug info
+glfw3.lib(monitor.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(monitor.obj)' or at ''; linking object as if no debug info
+glfw3.lib(vulkan.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(vulkan.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_window.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_window.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_joystick.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_joystick.obj)' or at ''; linking object as if no debug info
+glfw3.lib(wgl_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(wgl_context.obj)' or at ''; linking object as if no debug info
+glfw3.lib(egl_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(egl_context.obj)' or at ''; linking object as if no debug info
+glfw3.lib(osmesa_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(osmesa_context.obj)' or at ''; linking object as if no debug info
+  OGL_Learning.vcxproj -> C:\Users\Max\Desktop\New folder\OGL_Master_Orthogonal_Projection\OGL_Learning\x64\Debug\OGL_Learning.exe
