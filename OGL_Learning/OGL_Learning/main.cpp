@@ -7,7 +7,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include <glfw3.h>
+#include <GLFW/glfw3.h>
 
 cells* mycells;
 
@@ -29,7 +29,7 @@ int clickgird[];
 std::vector<float> rectangles;
 std::vector<int> rect_indices;
 unsigned int EBO;
-
+int textureID = 0;
 glm::mat4 projection = glm::ortho(0.0f, width, 0.0f, height, -1.0f, 1.0f);
 glm::vec3 transformation = glm::vec3(0.0f,0.0f,0.0f);
 glm::mat4 translationMatrix = glm::translate(glm::mat4(1.0f),transformation);
@@ -91,7 +91,7 @@ void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
    
         std::cout << "lt: " << lt.x << " " << lt.y << "\n";
         std::vector<glm::vec3> addVector = { lt ,rt,rb,lb };
-        mycells->add(addVector);
+        mycells->add(addVector,textureID);
     }
 }
 
@@ -122,6 +122,12 @@ void processInput(GLFWwindow* window) {
     else if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
         transformation = glm::vec3{ transformation.x += 1.0f ,transformation.y,transformation.z };
         translationMatrix = glm::translate(glm::mat4(1.0f), transformation);
+    }
+    else if (glfwGetKey(window, GLFW_KEY_1) == GLFW_PRESS) {
+        textureID = 1;
+    }
+    else if (glfwGetKey(window, GLFW_KEY_2) == GLFW_PRESS) {
+        textureID = 0;
     }
     
 
