@@ -8,6 +8,6 @@ This is a 2D project using an orthogonal projection.
 <p>https://www.glfw.org/download.html</p>
 <p>https://glm.g-truc.net/0.9.9/</p>
 
-<p>stbi_image</p>
+<p>[stbi_image](https://github.com/nothings/stb/blob/master/stb_image.h)</p>
 
 please include these in your external libraries and headers. 
