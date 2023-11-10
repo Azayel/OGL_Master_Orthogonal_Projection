@@ -1,5 +1,16 @@
-﻿  cells.cpp
-C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\cells.cpp(179,15): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\cells.cpp(200,49): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
-C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\cells.cpp(205,49): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+﻿  main.cpp
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(23,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(72,20): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(73,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(77,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(78,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(79,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(82,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(83,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(147,29): warning C4244: 'argument': conversion from 'const float' to 'GLsizei', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(147,22): warning C4244: 'argument': conversion from 'const float' to 'GLsizei', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(198,38): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(198,31): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\OGL_Learning\main.cpp(306,40): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
   OGL_Learning.vcxproj -> C:\Users\TryCa\Documents\Git\OGL_Master_Orthogonal_Projection\OGL_Learning\x64\Debug\OGL_Learning.exe

@@ -8,9 +8,10 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <GLFW/glfw3.h>
+#include <chrono>
+#include <thread>
 
 cells* mycells;
-
 //Window
 GLFWwindow* window;
 
@@ -149,7 +150,6 @@ int main( void )
     if (!vertexBufferInitialized) return -1;
     vbinit = true;
     mycells = new cells();
-   
     
    
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); WIRE FRAME
@@ -273,11 +273,16 @@ void updateAnimationLoop(){
    
 
     // Clear the screen
+
+    uint64_t current = glfwGetTimerValue();
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     draw_grid();
     draw_cells();
-    
+    uint64_t after = glfwGetTimerValue();
+    //std::cout << "Time Passed: " << after - current << std::endl;
+    //Will it work i do not know
+    std::this_thread::sleep_for(std::chrono::milliseconds((1000/60) - (after - current)));
 
 }
 

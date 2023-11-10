@@ -97,6 +97,28 @@ void cells::initbuffers() {
 
 
 
+void cells::removevertex(int firstvertexindex, int id) {
+    std::cout << "Removing from: " << id << " " << "Size of if buffer " << vertexdataholder[id].size() << " " << "Size of the indices buffer " << indices[id].size() << std::endl;
+
+    this->vertexdataholder[id].erase(vertexdataholder[id].begin() + firstvertexindex, vertexdataholder[id].begin() + firstvertexindex + 24);
+    
+    int a = firstvertexindex / 4;
+    this->indices[id].erase(indices[id].begin() + indices[id].size()-6, indices[id].begin() + indices[id].size());
+    std::cout << "Removing from: " << id << " " << "Size of if buffer " << vertexdataholder[id].size() << " " << "Size of the indices buffer " << indices[id].size() << std::endl;
+
+    //Update respected buffers
+
+    glBindVertexArray(vao[id]);
+    glBindBuffer(GL_ARRAY_BUFFER, vbo[id]);
+    glBufferData(GL_ARRAY_BUFFER, vertexdataholder[id].size() * sizeof(float), vertexdataholder[id].data(), GL_STATIC_DRAW);
+
+
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo[id]);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices[id].size() * sizeof(unsigned int), indices[id].data(), GL_STATIC_DRAW);
+
+
+}
+
 
 
 bool cells::add(std::vector<glm::vec3> v_add, int id) {
@@ -119,7 +141,14 @@ bool cells::add(std::vector<glm::vec3> v_add, int id) {
 
 
     int id0 = this -> exists(v_add, 0);
-    int id1 = this->exists(v_add, 1);
+    int id1 = this-> exists(v_add, 1);
+
+    if (id0 != -1) {
+        this->removevertex(id0, 0); //warped 
+    }
+    else if (id1 != -1) {
+        this->removevertex(id1, 1); //nether
+    }
 
     
 
@@ -147,7 +176,7 @@ bool cells::add(std::vector<glm::vec3> v_add, int id) {
 
 
     //and the last step add the good id of the texture 0.0f for the holy missing texture of gmod :=)
-
+    
 
 
     glBindVertexArray(vao[id]);
@@ -159,6 +188,7 @@ bool cells::add(std::vector<glm::vec3> v_add, int id) {
     this->update_indices(id);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices[id].size() * sizeof(unsigned int), indices[id].data(), GL_STATIC_DRAW);
 
+    std::cout << "Removing from: " << id << " " << "Size of if buffer " << vertexdataholder[id].size() << " " << "Size of the indices buffer " << indices[id].size() << std::endl;
 
     return true;
 }
@@ -184,9 +214,6 @@ void cells::update_indices(int id) {
             indices[id].insert(indices[id].end(), s + indices[id][i]);
         }
     }
-
-    
-
 
     
 }

@@ -14,6 +14,7 @@ class cells {
 
 
 	void update_indices(int id);
+	void dynamic_indices_updater(int);
 	int exists(const std::vector<glm::vec3>& ,int);
 	void initbuffers();
 	void removevertex(int,int);
