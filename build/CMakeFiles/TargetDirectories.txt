@@ -1,0 +1,3 @@
+/home/asayel/Documents/GitHub/OGL_Master_Orthogonal_Projection/build/CMakeFiles/OGL.dir
+/home/asayel/Documents/GitHub/OGL_Master_Orthogonal_Projection/build/CMakeFiles/edit_cache.dir
+/home/asayel/Documents/GitHub/OGL_Master_Orthogonal_Projection/build/CMakeFiles/rebuild_cache.dir

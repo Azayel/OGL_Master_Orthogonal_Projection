@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/OGL.dir/src/glad.c.o CMakeFiles/OGL.dir/src/main.cpp.o CMakeFiles/OGL.dir/src/cells.cpp.o CMakeFiles/OGL.dir/src/Shader.cpp.o -o OGL  -lGL -ldl -lglfw /usr/include/glm/glm.hpp /usr/include/stb_image.h 
