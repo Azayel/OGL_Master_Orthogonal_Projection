@@ -1,4 +1,4 @@
-#include "mainloop.h";
+#include "mainloop.h"
 #include "Shader.h"
 #include "cells.h"
 
