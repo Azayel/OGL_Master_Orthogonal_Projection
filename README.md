@@ -10,4 +10,4 @@ This is a 2D project using an orthogonal projection.
 
 <p>[stbi_image](https://github.com/nothings/stb/blob/master/stb_image.h)</p>
 
-please include these in your external libraries and headers. 
+please include these in your external libraries and headers and do update your cmakelist.
