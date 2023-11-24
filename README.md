@@ -17,4 +17,3 @@ This is a 2D project using an orthogonal projection.
 <p>make</p>
 
 <p>Requires Cmake and Make!!!!!</p>
-please include these in your external libraries and headers and do update your cmakelist.
