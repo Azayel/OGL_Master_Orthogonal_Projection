@@ -1,7 +1,7 @@
-#include "cells.h"
-#include "Shader.h"
+#include "../includes/cells.h"
+#include "../includes/Shader.h"
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+#include "../includes/stb_image.h"
 #include <glad/glad.h>
 #include <iostream>
 #include <string>
@@ -41,7 +41,7 @@ cells::cells() {
 	//Gen Buffers
     this->initbuffers();
 
-    Shader myShader("../src/cell_shader.vert", "../src/cell_shader.frag");
+    Shader myShader("../resources/cell_shader.vert", "../resources/cell_shader.frag");
     this->programID = myShader.getID();
 }
 
@@ -51,8 +51,8 @@ void cells::initbuffers() {
     glGenBuffers(2, ebo);
     glGenVertexArrays(2, vao);
 
-    this->texture[0] = LoadTexture("../textures/warped.jpg");
-    this->texture[1] = LoadTexture("../textures/nether.jpg");
+    this->texture[0] = LoadTexture("../resources/warped.jpg");
+    this->texture[1] = LoadTexture("../resources/nether.jpg");
 
     glBindVertexArray(vao[0]);
     glBindBuffer(GL_ARRAY_BUFFER, vbo[0]);

@@ -1,6 +1,6 @@
-#include "mainloop.h"
-#include "Shader.h"
-#include "cells.h"
+#include "../includes/mainloop.h"
+#include "../includes/Shader.h"
+#include "../includes/cells.h"
 
 #include <glad/glad.h>
 #include <iostream>
@@ -153,7 +153,7 @@ int main( void )
     
    
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); WIRE FRAME
-    Shader myShader("../src/grid_shader.vert", "../src/grid_shader.frag");
+    Shader myShader("../resources/grid_shader.vert", "../resources/grid_shader.frag");
     std::cout << "Helllooo" << std::endl;
     myShader.use();
     programID = myShader.getID();
