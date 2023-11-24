@@ -13,7 +13,11 @@ This is a 2D project using an orthogonal projection.
 <p>Everything should work out of the box clone this repository and create a directory build</p>
 <p>Change Directory to build</p>
 <p>Enter in your favorite terminal</p>
+<p> Under Windows:
 <p>cmake -G "Unix Makefiles" ..</p>
 <p>make</p>
 
 <p>Requires Cmake and Make!!!!!</p>
+
+<p>Under Linux </p>
+<P>just remove the subdirectory command and add at the linker glfw</P>
